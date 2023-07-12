@@ -1,4 +1,5 @@
 <?php
+include_once '../interfaces/employee-interfacce.php';
 class Employee implements EmployeeInterface {
     // Connection
     private $conn;
