@@ -17,7 +17,6 @@ class Employee {
     }
 
     public function getAllEmployees(){
-
     }
 }
 
