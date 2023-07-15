@@ -4,12 +4,11 @@ class Employee implements EmployeeInterface {
     // Connection
     private $conn;
     // Table
-    private $db_table = "Employee";
+    private $db_table = "users";
     // Columns
     public $id;
     public $name;
     public $email;
-    public $age;
     public $designation;
     public $created;
     public function __construct($db)
@@ -19,7 +18,7 @@ class Employee implements EmployeeInterface {
 
     public function getAllEmployees()
     {
-        $sqlQuery = "SELECT id, name, email, age, designation, created FROM " . $this->db_table . ";";
+        $sqlQuery = "SELECT id, name, email, designation, created FROM " . $this->db_table . ";";
         $stmt = $this->conn->prepare($sqlQuery);
         $stmt->execute();
         return $stmt;
