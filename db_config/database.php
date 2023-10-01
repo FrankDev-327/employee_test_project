@@ -1,9 +1,9 @@
 <?php
     class Database {
-        private $host = "*";
-        private $database_name = "*";
-        private $username = "*";
-        private $password = "*";
+        private $host = "172.18.0.2";
+        private $database_name = "users";
+        private $username = "user";
+        private $password = "root";
         public $conn;
 
 
